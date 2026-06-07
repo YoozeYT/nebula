@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -55,6 +56,9 @@ export default function App() {
 
             {/* Cookie Approval Banner */}
             <CookieConsent />
+
+            {/* Vercel Speed Insights */}
+            <SpeedInsights />
           </motion.div>
         )}
       </AnimatePresence>
